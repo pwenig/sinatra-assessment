@@ -1,6 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <h1>Welcome</h1>
+
 <h2><a href="/add">Add a Product</a></h2>
+<% product.each do |product| %>
+  <h3>
+    <li><%= product %></li>
+  </h3>
+<% end %>
 
 </html>
